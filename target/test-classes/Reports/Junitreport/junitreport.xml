@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="71.078407">
+<testcase classname="To validate login functionlity of facebook application" name="To validate login function with invalid credential" time="52.336145">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at org.stepdefinition.Login.user_navigate_to_invalid_page(Login.java:36)&#13;&#10;&#9;at ✽.User navigate to invalid page(file:src/test/resources/Features/Login.feature:10)&#13;&#10;"><![CDATA[Given User navigate to the facebook application.............................passed
+When User enter username "sera" and password "9898".........................passed
+And User click login button.................................................passed
+Then User navigate to invalid page..........................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.stepdefinition.Login.user_navigate_to_invalid_page(Login.java:36)
+	at ✽.User navigate to invalid page(file:src/test/resources/Features/Login.feature:10)
+]]></failure>
+</testcase>
+<testcase classname="To validate login functionlity of facebook application" name="To validate register function with valid credential" time="18.742262">
+<system-out><![CDATA[Given User navigate to the facebook application.............................passed
+When User click create button...............................................passed
+And User enter firstname and lastname.......................................passed
+And User click signup button................................................passed
+Then User successfully registered...........................................passed
+]]></system-out>
+</testcase>
+</testsuite>

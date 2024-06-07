@@ -1,0 +1,246 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-05-24T11:28:50.356Z",
+        "before": [
+          {
+            "result": {
+              "duration": 29748189200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario1()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "To validate login function with invalid credential",
+        "description": "",
+        "id": "to-validate-login-functionlity-of-facebook-application;to-validate-login-function-with-invalid-credential",
+        "after": [
+          {
+            "result": {
+              "duration": 2527656600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario1()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6903800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigate to the facebook application",
+            "match": {
+              "location": "Login.user_navigate_to_the_facebook_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2842336000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enter username \"sera\" and password \"9898\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sera\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"9898\"",
+                  "offset": 40
+                }
+              ],
+              "location": "Login.user_enter_username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5578693200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User click login button",
+            "match": {
+              "location": "Login.user_click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat org.stepdefinition.Login.user_navigate_to_invalid_page(Login.java:36)\r\n\tat ✽.User navigate to invalid page(file:src/test/resources/Features/Login.feature:10)\r\n",
+              "duration": 11238381500,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "User navigate to invalid page",
+            "match": {
+              "location": "Login.user_navigate_to_invalid_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "To validate login functionlity of facebook application",
+    "description": "",
+    "id": "to-validate-login-functionlity-of-facebook-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/Login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-05-24T11:29:42.719Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11261452000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario1()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "To validate register function with valid credential",
+        "description": "",
+        "id": "to-validate-login-functionlity-of-facebook-application;to-validate-register-function-with-valid-credential",
+        "after": [
+          {
+            "result": {
+              "duration": 263900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario1()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2744600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User navigate to the facebook application",
+            "match": {
+              "location": "Login.user_navigate_to_the_facebook_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1186409400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User click create button",
+            "match": {
+              "location": "Register.user_click_create_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3860182500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enter firstname and lastname",
+            "match": {
+              "location": "Register.user_enter_firstname_and_lastname()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 559314100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User click signup button",
+            "match": {
+              "location": "Register.user_click_signup_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1838806000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User successfully registered",
+            "match": {
+              "location": "Register.user_successfully_registered()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register"
+          },
+          {
+            "name": "@retest"
+          }
+        ]
+      }
+    ],
+    "name": "To validate login functionlity of facebook application",
+    "description": "",
+    "id": "to-validate-login-functionlity-of-facebook-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/Register.feature",
+    "tags": [
+      {
+        "name": "@register",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
